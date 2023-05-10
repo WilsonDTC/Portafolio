@@ -1,0 +1,129 @@
+.titulo-principal{
+    text-align: center;
+    text-decoration:underline;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: url(images/descarga.png);
+    background-position: 24% 200px;
+    background-repeat: no-repeat;
+    background-size: none;
+    background-color: #d4e8fa;
+}
+
+.Cuadros{
+    display: flex;
+    width: 100%;
+}
+
+.Cuadro1{
+    padding: 10px;
+    display: inline-block;
+    vertical-align: top;
+    width: 55%;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 10px;
+}
+
+.Cuadro2{
+    padding: 10px;
+    display: inline-block;
+    vertical-align: top;
+    justify-content: center;
+    width: 45%;
+}
+
+textarea {
+    background-color: transparent;
+    font-size: 25px;
+    display: flex;
+    border: solid 1px;
+    border-radius: 3%;
+    height: 300%;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#Res{
+    background-color: white;
+    border: none;
+    border-radius: 3%;
+    text-align: center;
+    line-height: 38px;
+}
+
+button{
+    background-color: #325777;
+    color: white;
+    width: 25%;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px;
+    margin: 5px 12% 0 12%;
+}
+
+#btd{
+    background-color: #70a4d1;
+    color: black;
+}
+
+#bt{
+    background-color: #8cacc9;
+    margin: 25px 38% 0 38%;
+    color: black;
+}
+
+#muñeco{
+    position: absolute;
+    float: auto;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+button:hover{
+    width: 26%;
+    border-color: antiquewhite;
+}
+
+/*Responsividad*/
+@media (max-width: 70em){
+    body{
+        background-position: 50% 200px;
+        background-repeat: no-repeat;
+        background-size: none;
+    }
+    #muñeco{
+        display: none;
+        visibility: hidden;
+    }
+    button{
+        width: auto;
+    }
+    #bt{
+        margin-left: 42%;
+    }
+    button:hover{
+        border-color: antiquewhite;
+        width: auto;
+    }
+    .Cuadros{
+        display: inline-block;
+        vertical-align: top; 
+        height: 100%;
+    }
+    .Cuadro1, .Cuadro2{
+        width: 100%;
+        height: 100%;
+        padding-top: 5%;
+        justify-content: center;
+    }
+    textarea {
+        height: auto;
+        width: 98.5%;
+        height: 400px;
+    }     
+} 
