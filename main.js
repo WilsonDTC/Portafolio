@@ -43,7 +43,7 @@ function Validacion(e)
 {
     key = e.keyCode || e.which;
     tecla = String.fromCharCode(key).toString();
-    letras = "abcdefghijklmnopqrstuvwxyz";
+    letras = "abcdefghijklmnopqrstuvwxyz ";
 
     especiales = [8,13];
     tecla_especial = false
