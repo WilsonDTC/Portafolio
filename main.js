@@ -46,7 +46,7 @@ function Validacion(e)
     letras = "abcdefghijklmnopqrstuvwxyz ";
 
     especiales = [8,13];
-    tecla_especial = false
+    tecla_especial = true
     for(var i in especiales) {
     if(key == especiales[i]){
     tecla_especial = true;
