@@ -43,10 +43,10 @@ function Validacion(e)
 {
     key = e.keyCode || e.which;
     tecla = String.fromCharCode(key).toString();
-    letras = "abcdefghijklmnopqrstuvwxyz ";
+    letras = [ a-zA]+$;
 
     especiales = [8,13];
-    tecla_especial = true
+    tecla_especial = false
     for(var i in especiales) {
     if(key == especiales[i]){
     tecla_especial = true;
